@@ -1,0 +1,166 @@
+@import 'https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+}
+body button {
+  font-family: inherit;
+}
+body a {
+  text-decoration: none;
+}
+body a:link {
+  color: #FFFFFF;
+}
+body a:visited {
+  color: #FFFFFF;
+}
+body a:hover {
+  color: #FF5300;
+}
+body a:active {
+  color: #FF5300;
+}
+body ul {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1179px;
+  margin: 0 auto;
+}
+
+.header {
+  max-width: 2000px;
+  margin: 0 auto;
+  background-color: #373737;
+  overflow: hidden;
+  font-size: 20px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  align-items: center;
+}
+
+.menu__logo {
+  min-width: 162px;
+  height: 48px;
+  margin-right: 10px;
+  position: relative;
+  background: url("../../assets/header/logo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.menu__nav {
+  display: flex;
+  width: 100%;
+  max-width: 932px;
+  height: 48px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__list {
+  width: 100%;
+  max-width: 692px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__item {
+  flex: 0 0 auto;
+}
+
+.menu__button {
+  margin-left: 10px;
+}
+.menu__button svg {
+  cursor: pointer;
+}
+.menu__button svg:hover path {
+  fill: #FF5300;
+}
+
+@media (max-width: 786px) {
+  .container {
+    max-width: 690px;
+    margin: 0 auto;
+  }
+
+  .menu {
+    font-size: 16px;
+    height: 80px;
+  }
+
+  .menu__logo {
+    min-width: 83px;
+    height: 25px;
+    position: relative;
+  }
+
+  .menu__nav {
+    max-width: 579px;
+  }
+
+  .menu__list {
+    max-width: 526px;
+  }
+
+  .menu__button {
+    padding-top: 4px;
+  }
+}
+@media (max-width: 375px) {
+  .container {
+    max-width: 345px;
+    margin: 0 auto;
+  }
+
+  .menu {
+    height: 50px;
+  }
+
+  .menu__logo {
+    min-width: 102px;
+    height: 31px;
+    position: relative;
+  }
+
+  .menu__button {
+    margin: 0;
+  }
+
+  .menu__nav {
+    max-width: 183px;
+  }
+
+  .menu__list {
+    display: none;
+  }
+
+  .burger {
+    width: 18px;
+    height: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  .burger__line {
+    height: 2px;
+    width: 100%;
+    background: #FFFFFF;
+  }
+}

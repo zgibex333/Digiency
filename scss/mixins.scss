@@ -1,0 +1,19 @@
+@mixin linksColor ($color1, $color2) {
+    text-decoration: none;
+    &:link {
+        color: $color1;
+    }
+    &:visited {
+        color: $color1; 
+    }
+    &:hover {
+        color: $color2; 
+    }
+    &:active {
+        color: $color2;
+      }
+}
+
+@mixin cursorPointer () { 
+    cursor: pointer;
+}
