@@ -1,0 +1,172 @@
+@import "../colors.scss";
+@import "../size.scss";
+@import "../mixins.scss"; 
+@import "../settings.scss";
+
+
+
+.about {
+    height: 935px;
+    background: $dark3;
+    color: $white; 
+    line-height: 24px; 
+    &__content {
+        padding-top: 120px;
+        display: flex;
+    }
+
+
+
+    h2 {
+        margin: 25px 0 18px 0; 
+        font-size: $heading;
+        font-weight: 600;
+        line-height: 48px; 
+    }
+
+    &__button {
+        margin-top: 25px; 
+    }
+
+    &__image {
+        width:100%;
+        align-self: flex-end;
+        img {
+            
+            width: 100%; 
+            height: 100%;
+            object-fit: cover;
+            object-position: bottom;
+        }
+    }
+}
+
+.about-info {
+    max-width: 569px;
+    width: 100%;
+}
+
+.about-info__underTtitle__padding {
+    padding-top: 18px;
+}
+
+.about__button{
+    color: $white; 
+    width:150px; 
+    height:50px; 
+    font-size: $navSize;
+    box-shadow: 0px 1px 10px $accent;
+    background: $accent; 
+    outline: none;
+    border: none; 
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer; 
+
+    &:hover {
+    box-shadow: 0px 1px 10px $dark2;
+    background: $dark2;
+    }
+}
+
+.about-wrapper {
+    padding-top: 60px;
+    display: grid;
+    grid-template: 1fr / repeat(4, 1fr);
+    grid-gap: 30px;
+}
+
+.about__point {
+    background: $dark2;
+    max-width: 270px;
+    height: 200px; 
+    text-align: center;
+    .circle {
+        margin: 25px auto 36px;
+        width: 70px; 
+        height: 70px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about__p {
+        padding: 0 13px;
+    }
+
+    .circle1 {
+        background: $accent;
+        @include circleShadow (rgba(255, 83, 0, 0.4)); 
+    }
+    .circle2 {
+        background: $grey;
+        @include circleShadow (rgba(0, 0, 0, 0.4)); 
+    }
+    .circle3 {
+        background: $blue;
+        @include circleShadow (rgba(0, 194, 255, 0.4)); 
+    }
+    .circle4 {
+        background: $dark2;
+        @include circleShadow (rgba(0, 0, 0, 0.4)); 
+    }
+}
+
+
+
+@media (max-width: $tablet) {
+    .about-info {
+        max-width: 329px;
+    }
+    .about {
+        height: 912px;
+        &__content {
+            padding-top: 120px;
+            display: flex;
+        }
+    
+    
+    
+        h2 {
+            margin: 25px 0 18px 0; 
+            font-size: $mobileTitle;
+            font-weight: 600;
+            line-height: 48px; 
+        }
+    
+        &__button {
+            margin-top: 25px; 
+        }
+    
+        &__image {
+            width:100%;
+            align-self: center;
+            img {
+                width: 100%; 
+                height: 100%;
+                object-fit: cover;
+                object-position: bottom;
+            }
+        }
+    }
+    .about__point {
+        background: $dark2;
+        max-width: 154px;
+        height: 200px; 
+        text-align: center;
+        .circle {
+            margin: 35px auto 25px;
+            width: 50px; 
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        .about__p {
+            padding: 0 5px;
+        }
+    }
+}

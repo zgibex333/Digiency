@@ -17,3 +17,7 @@
 @mixin cursorPointer () { 
     cursor: pointer;
 }
+
+@mixin circleShadow ($color) {
+    box-shadow: 4px 5px 15px $color;
+}
