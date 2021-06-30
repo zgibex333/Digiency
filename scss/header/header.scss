@@ -7,7 +7,6 @@
 .container {
         max-width: $containerDesktop;
         margin: 0 auto; 
-        overflow-x: hidden;
 }
 
 
@@ -28,8 +27,8 @@ body {
 
 
 .header {
-    padding-left: 10px; 
-    padding-right: 10px;
+    padding-left: 15px; 
+    padding-right: 15px;
     width: 100%;
     position: absolute;
     background-color: $primary;
@@ -121,6 +120,15 @@ body {
         padding-top: 4px;
     }
     
+}
+
+@media (max-width: 542px) {
+    .menu__logo {
+        min-width: 60px;
+    }
+    .menu {
+        font-size: 10px;
+    }
 }
 
 @media (max-width: $mobile) {
