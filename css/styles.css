@@ -1471,8 +1471,12 @@ h2 {
 .blog-item {
   position: relative;
   width: 570px;
+  height: 294px;
   background: #242526;
   padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .blog-topic {
@@ -1485,7 +1489,7 @@ h2 {
   font-weight: 500;
   font-size: 25px;
   line-height: 123.6%;
-  max-width: 325px;
+  max-width: 330px;
 }
 .blog-image {
   position: absolute;
@@ -1499,4 +1503,29 @@ h2 {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.blog-author {
+  display: flex;
+  position: relative;
+  right: 0;
+  top: 0;
+  align-self: baseline;
+}
+.blog-face {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.blog-face img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.blog-description {
+  display: flex;
+  flex-direction: column;
+}
+.blog-info {
+  display: flex;
 }
