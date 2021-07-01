@@ -1,0 +1,229 @@
+@import "../colors.scss";
+@import "../size.scss";
+@import "../mixins.scss";
+@import "../settings.scss";
+
+
+
+//slick
+
+.slick-track {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+  }
+  
+  .slick-list {
+    overflow: hidden;
+  }
+  
+  .reviews-slider {
+    .slick-arrow {
+      position: absolute;
+    }
+  
+    .slick-dots {
+      display: flex;
+      margin: 0 auto;
+      width: 90px;
+      justify-content: space-between;
+      padding-top: 50px;
+      padding-bottom: 60px;
+      button {
+        border: none;
+      }
+      .slick-active button {
+        background: $accent;
+      }
+    }
+    .slick-dots button {
+      font-size: 0;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      position: relative;
+    }
+    .slick-dots {
+      #slick-slide-control00::after {
+        display: block;
+        content: "";
+        width: 50px;
+        height: 15px;
+        border-radius: 7.5px;
+        background: $primary;
+        position: absolute;
+        left: 20px;
+        top: 0;
+      }
+    }
+  }
+  
+
+//////////
+
+.reviews {
+  background: $dark2;
+  color: $white;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.reviews-header {
+  margin: 0 auto;
+  text-align: center;
+  &__overtitle {
+    padding-top: 60px;
+  }
+  &__title {
+    margin-bottom: 60px;
+  }
+}
+
+.review- {
+  &item {
+    padding-right: 30px;
+    max-width: 510px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    font-size: 16px;
+    line-height: 150.6%;
+    font-weight: 400;
+  }
+}
+
+.profile- {
+  &avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    top: 25px;
+    z-index: 999;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &info {
+    background: $accent;
+    position: relative;
+    left: 40px;
+    z-index: 998;
+    height: fit-content;
+    padding: 35px 35px 25px 65px;
+  }
+  &name {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 123.6%;
+  }
+
+  &title {
+    margin-top: 7px;
+    margin-bottom: 23px;
+  }
+}
+
+@media (max-width: $tablet) {
+  .review- {
+    &item {
+      padding-right: 30px;
+      max-width: 317px;
+      width: 100%;
+      height: auto;
+      position: relative;
+      font-size: 16px;
+      line-height: 150.6%;
+      font-weight: 400;
+    }
+  }
+
+  .profile- {
+    &avatar {
+      width: 50px;
+      height: 50px;
+      left: 0;
+      top: 25px;
+    }
+    &info {
+      background: $accent;
+      position: relative;
+      left: 25px;
+      z-index: 998;
+      height: fit-content;
+      padding: 25px 30px 15px 35px;
+    }
+    &name {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 123.6%;
+    }
+
+    &title {
+      margin-top: 10px;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media (max-width: 543px) {
+  .profile-name {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 123.6%;
+  }
+
+  .profile-title {
+    font-size: 10px;
+  }
+  .profile-review {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: $mobile) {
+    .slick-dots {
+        padding-top: 25px !important;
+    }
+    .review-item {
+        min-width: 246px;
+        max-width: 246px;
+    }
+    .profile-info {
+        width: 100%;
+        padding: 25px 12px 18px 35px;
+    }
+  .profile-name {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150.6%;
+  }
+
+  .profile-title {
+    font-weight: normal;
+    font-size: 12.8px;
+    line-height: 123.6%;
+  }
+  .profile-review {
+    font-weight: normal;
+    font-size: 12.8px;
+    line-height: 123.6%;
+  }
+  .reviews-header {
+    margin: 0 auto;
+    text-align: center;
+    &__overtitle {
+      padding-top: 50px;
+    }
+    &__title {
+      margin-bottom: 18px;
+    }
+  }
+  
+}
+

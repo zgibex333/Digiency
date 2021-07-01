@@ -1,0 +1,113 @@
+@import "../colors.scss";
+@import "../size.scss";
+@import "../mixins.scss";
+@import "../settings.scss";
+
+
+.blog {
+    background: $dark3;
+    color: $white;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .blog-header {
+    margin: 0 auto;
+    text-align: center;
+    &__overtitle {
+      padding-top: 120px;
+    }
+    &__title {
+      margin-bottom: 60px;
+    }
+  }
+  
+
+//   .blog- {
+//     &item {
+//       padding-right: 30px;
+//       max-width: 510px;
+//       width: 100%;
+//       height: auto;
+//       position: relative;
+//       font-size: 16px;
+//       line-height: 150.6%;
+//       font-weight: 400;
+//     }
+//   }
+  
+//   .profile- {
+//     &avatar {
+//       width: 80px;
+//       height: 80px;
+//       border-radius: 50%;
+//       position: absolute;
+//       top: 0px;
+//       left: 0;
+//       top: 25px;
+//       z-index: 999;
+//       img {
+//         width: 100%;
+//         height: 100%;
+//         object-fit: cover;
+//       }
+//     }
+//     &info {
+//       background: $accent;
+//       position: relative;
+//       left: 40px;
+//       z-index: 998;
+//       height: fit-content;
+//       padding: 35px 35px 25px 65px;
+//     }
+//     &name {
+//       font-weight: 500;
+//       font-size: 25px;
+//       line-height: 123.6%;
+//     }
+  
+//     &title {
+//       margin-top: 7px;
+//       margin-bottom: 23px;
+//     }
+//   }
+
+  .blog-slider {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+  }
+
+  .blog-item {
+     position: relative;
+      width: 570px; 
+      background: $dark2; 
+      padding: 25px;
+  }
+  .blog- {
+      &topic {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 150.6%;
+        color: $accent; 
+      }
+      &title {
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 123.6%;
+        max-width: 325px; 
+      }
+      &image {
+          position: absolute;
+          top:25px; 
+          right:25px; 
+          width:164px; 
+          height: 164px; 
+          border-radius: 50%; 
+          img {
+              width: 100%; 
+              height: 100%;
+              object-fit: cover;
+          }
+      }
+  }
